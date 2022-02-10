@@ -1,0 +1,197 @@
+body {
+    background: #f2f2f2;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* --- BARRA LATERAL ---*/
+.barra-lateral {
+    background: #262a34;
+    color: #fff;
+    min-width: 220px;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.barra-lateral a {
+    color: #fff;
+}
+
+/* --- LOGO --- */
+.barra-lateral .logo {
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2px;
+}
+
+.barra-lateral .logo img {
+    max-height: 100px;
+    padding: 10px;
+}
+
+/* --- MENU --- */
+.barra-lateral .menu a {
+    display: block;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(255, 255, 255, .1);
+}
+
+.barra-lateral .menu a:hover {
+    background: #35ae6b;
+    text-decoration: none;
+}
+
+.barra-lateral .menu a i {
+    margin-right: 20px;
+    /*font-weight: normal;*/
+}
+
+.barra-lateral .menu .selected {
+    background: gray;
+}
+
+/* --- MAIN --- */
+main {
+    padding-top: 40px;
+}
+
+main .columna {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+main .titulo {
+    color: #262a34;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+main .widget {
+    margin-bottom: 40px;
+}
+
+/* --- Widget Nuevo --- */
+main .widget form input[type="text"],
+main .widget form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .2);
+
+    border: 3px solid transparent;
+}
+
+
+main .widget form input[type="text"]:focus,
+main .widget form textarea:focus {     
+    outline: none;
+    border: 3px solid rgba(2, 116, 216, 0.8);
+}
+
+main .widget form input[type="text"] {
+    font-weight: 400;
+}
+
+main .widget form textarea {
+    height: 400px;
+    min-height: 200px;
+    max-height: 700px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/* --- Widget Estadisticas --- */
+main .estadisticas .contenedor {
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,.2);
+}
+
+main .estadisticas .caja {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    padding: 40px;
+    flex: 1;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+main .estadisticas .caja h3 {
+    margin-bottom: 2px;
+    color: #35ae6b;
+
+    font-size: 20px;
+}
+
+main .estadisticas .caja p {
+    color: #a8a8a8;
+    margin-bottom: 0;
+}
+
+/* --- --- MEDIAQUERIES --- --- */
+@media screen and (max-width: 1100px) {
+    .barra-lateral {
+        min-width: auto;
+    }
+
+    .barra-lateral .logo img {
+        display: none;
+    }
+
+    .barra-lateral .menu a span {
+        display: none;
+    }
+
+    .barra-lateral .menu a i {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .barra-lateral {
+        min-height: auto;
+    }
+
+    .barra-lateral .menu a {
+        display: inline-block;
+        border-bottom: none;
+    }
+
+    main .widget form button {
+        width: 100%;
+    }
+
+    main .columna img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main .estadisticas .caja h3 { 
+        font-size: 18px;
+    }
+
+    main .estadisticas .caja p {
+        font-size: 14px;
+    }
+
+    main .columna {
+        font-size: 14px;
+    }
+
+    main .columna h2 {
+        font-size: 22px;
+    }
+
+    main .columna h4, h5 {
+        font-size: 16px;
+    }
+
+    main .widget .titulo {
+        font-size: 22px;
+        text-align: center;
+    }
+}

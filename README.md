@@ -31,5 +31,5 @@
 </p>
 
 <p align="center">
-   <img src="https://raw.githubusercontent.com/bornmay/bornmay/Update/svg/Bottom.svg" alt="Github Stats" />
+   <img src="https://raw.githubusercontent.com/giordanoplas/giordanoplas/cd76570d3152046b5cc74d603d47a5694646a5be/Bottom.svg" alt="Github Stats" />
 </p>
